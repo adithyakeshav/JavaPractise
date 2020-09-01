@@ -27,7 +27,10 @@ public class PredicateAndConsumerExample {
         students.forEach(studentConsumer);
     }
 
-    public static void main(String[] args) {
+    public PredicateAndConsumerExample() {
+	}
+
+	public static void main(String[] args) {
         new PredicateAndConsumerExample(StudentDatabase.getAllStudents());
     }
 }
