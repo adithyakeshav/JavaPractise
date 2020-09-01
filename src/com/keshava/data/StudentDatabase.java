@@ -2,8 +2,12 @@ package com.keshava.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDatabase {
+
+    public static Supplier<Student> getStudent = () -> new Student("Adithya", 2, 3.6, "male",
+            Arrays.asList("Chess", "Volleyball", "Cricket"));
 
     public static List<Student> getAllStudents() {
         Student student1 = new Student("Adithya", 2, 3.6, "male", Arrays.asList("Chess", "Volleyball", "Cricket"));

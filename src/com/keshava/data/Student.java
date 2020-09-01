@@ -59,11 +59,18 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student [activities=" + activities + ", gender=" + gender + ", gpa=" + gpa + ", gradeLevel="
-                + gradeLevel + ", name=" + name + "]";
+        return "\nStudent Name = " + name +
+        "\n\tActivities = " + activities + 
+        "\n\tGender = " + gender + 
+        "\n\tGPA = " + gpa + 
+        "\n\tGradeLevel = " + gradeLevel + "\n" ;
     }
 
-    
+    public Student() {
+    }
 
+    public Student(String name) {
+        this.name = name;
+    }
 
 }
